@@ -1,4 +1,4 @@
-package com.aus.basicrpc.registry;
+package com.aus.advancedrpc.registry;
 
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;

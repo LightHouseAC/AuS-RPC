@@ -1,4 +1,4 @@
-package com.aus.basicrpc.model;
+package com.aus.advancedrpc.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

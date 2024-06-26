@@ -1,8 +1,8 @@
 package com.aus.sample.provider;
 
-import com.aus.basicrpc.registry.LocalRegistry;
-import com.aus.basicrpc.server.HttpServer;
-import com.aus.basicrpc.server.VertxHttpServer;
+import com.aus.advancedrpc.registry.LocalRegistry;
+import com.aus.advancedrpc.server.HttpServer;
+import com.aus.advancedrpc.server.VertxHttpServer;
 import com.aus.sample.common.service.TaskService;
 import com.aus.sample.provider.impl.TaskServiceImpl;
 

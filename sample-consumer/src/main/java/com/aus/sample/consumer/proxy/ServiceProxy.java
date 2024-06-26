@@ -2,10 +2,10 @@ package com.aus.sample.consumer.proxy;
 
 import cn.hutool.http.HttpRequest;
 import cn.hutool.http.HttpResponse;
-import com.aus.basicrpc.model.RpcRequest;
-import com.aus.basicrpc.model.RpcResponse;
-import com.aus.basicrpc.serializer.JdkSerializer;
-import com.aus.basicrpc.serializer.Serializer;
+import com.aus.advancedrpc.model.RpcRequest;
+import com.aus.advancedrpc.model.RpcResponse;
+import com.aus.advancedrpc.serializer.JdkSerializer;
+import com.aus.advancedrpc.serializer.Serializer;
 
 import java.io.IOException;
 import java.lang.reflect.InvocationHandler;

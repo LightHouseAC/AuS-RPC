@@ -1,4 +1,4 @@
-package com.aus.basicrpc.server;
+package com.aus.advancedrpc.server;
 
 public interface HttpServer {
 
