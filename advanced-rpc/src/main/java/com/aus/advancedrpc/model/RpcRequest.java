@@ -1,5 +1,6 @@
 package com.aus.advancedrpc.model;
 
+import com.aus.advancedrpc.constant.RpcConstant;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -16,6 +17,8 @@ public class RpcRequest implements Serializable {
     private static final long serialVersionUID = 5137112355689878831L;
 
     private String serviceName;
+
+    private String serviceVersion = RpcConstant.DEFAULT_SERVICE_VERSION;
 
     private String methodName;
 

@@ -1,10 +1,13 @@
 package com.aus.advancedrpc.server;
 
+import com.aus.advancedrpc.RpcApplication;
 import com.aus.advancedrpc.model.RpcRequest;
 import com.aus.advancedrpc.model.RpcResponse;
 import com.aus.advancedrpc.registry.LocalRegistry;
 import com.aus.advancedrpc.serializer.JdkSerializer;
 import com.aus.advancedrpc.serializer.Serializer;
+
+import com.aus.advancedrpc.serializer.SerializerFactory;
 import io.vertx.core.Handler;
 import io.vertx.core.buffer.Buffer;
 import io.vertx.core.http.HttpServerRequest;
@@ -16,7 +19,7 @@ import java.lang.reflect.Method;
 public class HttpServerHandler implements Handler<HttpServerRequest> {
     @Override
     public void handle(HttpServerRequest request) {
-        final Serializer serializer = new JdkSerializer();
+        final Serializer serializer = SerializerFactory.getInstance(RpcApplication.getRpcConfig().getSerializer());
         System.out.println("Request received: " + request.method() + " " + request.uri());
 
         request.bodyHandler(body -> {

@@ -1,0 +1,5 @@
+jdk=com.aus.advancedrpc.serializer.JdkSerializer
+json=com.aus.advancedrpc.serializer.JsonSerializer
+hessian=com.aus.advancedrpc.serializer.HessianSerializer
+hessian2=com.aus.advancedrpc.serializer.Hessian2Serializer
+kryo=com.aus.advancedrpc.serializer.KryoSerializer

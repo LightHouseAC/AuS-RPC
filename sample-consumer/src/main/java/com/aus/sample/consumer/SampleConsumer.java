@@ -3,7 +3,7 @@ package com.aus.sample.consumer;
 import cn.hutool.core.util.RandomUtil;
 import com.aus.sample.common.model.Task;
 import com.aus.sample.common.service.TaskService;
-import com.aus.sample.consumer.proxy.ServiceProxyFactory;
+import com.aus.advancedrpc.proxy.ServiceProxyFactory;
 
 public class SampleConsumer {
 
@@ -23,6 +23,10 @@ public class SampleConsumer {
         }else{
             System.out.println("Something went wrong");
         }
+
+        int number = taskService.getNumber();
+        System.out.println(number);
+
     }
 
 }

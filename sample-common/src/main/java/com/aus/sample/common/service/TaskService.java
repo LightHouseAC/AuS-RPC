@@ -6,4 +6,8 @@ public interface TaskService {
 
     Task getTask(Task task);
 
+    default int getNumber(){
+        return 1;
+    }
+
 }
